@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: Satoshi;
+  src: url(/assets/fonts/Satoshi-Regular.ttf);
+}
+
+:root {
+  --clr-main-dark: #000929;
+  --clr-main-white: #FFFFFF;
+  --clr-main-primary: #7065f0;
+  --clr-gray-600: #4d5461;
+  --clr-purple-shade: #e0def7;
+}
+
+body {
+  font-family: 'Satoshi';
+}
