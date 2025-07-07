@@ -56,9 +56,71 @@
 
   <main>
     <!-- hero section -->
-    <section>
+    <section class="pt-10 pb-10 bg-(--clr-hero-background-mobile)">
+      <div class="text-center mb-10">
+        <h2 class="text-[2.5rem]/12 font-[800] w-80 mx-auto text-(--clr-main-dark) mb-9">Buy, rent, or sell your
+          property easily
+        </h2>
+        <p class="text-[1.5rem] font-[550] w-90 mx-auto text-(--clr-main-dark)">A great platform to buy, sell, or even
+          rent your
+          properties without any commisions.</p>
+      </div>
 
+      <!-- search location mobile -->
+      <div class="flex flex-col max-w-80 mx-auto bg-(--clr-main-white)">
+        <!-- search location mobile top -->
+        <div
+          class="flex flex-row gap-4 justify-around py-4 rounded-t-lg border-b-2 border-(--clr-hero-background-mobile)">
+          <div class="cursor-pointer">
+            <p class="text-[1.2rem] font-[600] text-(--clr-main-dark) hover:text-(--clr-main-primary)">Rent</p>
+          </div>
+          <div class="cursor-pointer">
+            <p class="text-[1.2rem] font-[600] text-(--clr-main-dark) hover:text-(--clr-main-primary)">Buy</p>
+          </div>
+          <div class="cursor-pointer">
+            <p class="text-[1.2rem] font-[600] text-(--clr-main-dark) hover:text-(--clr-main-primary)">Sell</p>
+          </div>
+        </div>
+        <!-- search location mobile bottom -->
+        <div class="flex flex-row justify-between">
+          <form id="searchLocationFormMobile">
+            <input id="locationMobile" type="text" placeholder="Search location">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <!-- search location desktop -->
+      <div class="hidden">
+        <!-- search location desktop top -->
+        <div class="flex flex-row gap-4">
+          <div class="">
+            <p>Rent</p>
+          </div>
+          <div class="">
+            <p>Buy</p>
+          </div>
+          <div class="">Sell</div>
+        </div>
+        <!-- search location desktop bottom -->
+        <div class="">
+          <form id="searchLocationFormDesktop">
+            <div class="flex flex-col">
+              <label for="location">Location</label>
+              <input id="locationDesktop" type="text" placeholder="Barcelona, Spain">
+            </div>
+            <div class="">
+              <label for="moveInDate">When</label>
+              <input type="date" placeholder="Select Move-in Date">
+            </div>
+            <div class="">
+              <button type="submit">Browse Properties</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </section>
+
   </main>
 
 
