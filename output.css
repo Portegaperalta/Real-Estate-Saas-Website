@@ -523,6 +523,10 @@
     --tw-font-weight: 800;
     font-weight: 800;
   }
+  .font-\[900\] {
+    --tw-font-weight: 900;
+    font-weight: 900;
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
