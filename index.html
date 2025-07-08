@@ -67,7 +67,7 @@
       </div>
 
       <!-- search location mobile -->
-      <div class="flex flex-col max-w-80 mx-auto bg-(--clr-main-white)">
+      <div class="flex flex-col max-w-80 mx-auto mb-10 bg-(--clr-main-white) rounded-xl">
         <!-- search location mobile top -->
         <div
           class="flex flex-row gap-4 justify-around py-4 rounded-t-lg border-b-2 border-(--clr-hero-background-mobile)">
@@ -82,10 +82,12 @@
           </div>
         </div>
         <!-- search location mobile bottom -->
-        <div class="flex flex-row justify-between">
-          <form id="searchLocationFormMobile">
-            <input id="locationMobile" type="text" placeholder="Search location">
-            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <div class="flex flex-row align-middle justify-between rounded-b-2xl">
+          <form id="searchLocationFormMobile" class="relative">
+            <input id="locationMobile" class="p-5 outline-none" type="text" placeholder="Search location">
+            <button type="submit"
+              class="absolute left-66 top-3 bg-(--clr-main-primary) text-(--clr-main-white) py-2.5 px-3.5 rounded-md"><i
+                class="fa-solid fa-magnifying-glass"></i></button>
           </form>
         </div>
       </div>
@@ -117,6 +119,34 @@
               <button type="submit">Browse Properties</button>
             </div>
           </form>
+        </div>
+      </div>
+
+      <div class="flex flex-row gap-10 justify-center">
+        <div class="flex flex-col">
+          <div class="mb-5 w-20 relative border-2 border-(--clr-purple-shade) rounded-full">
+            <i
+              class="fa-solid fa-users text-4xl py-4 px-3 rounded-full border-4 border-(--clr-main-white) text-(--clr-main-white) bg-(--clr-purple-shade)"></i>
+            <i
+              class="fa-solid fa-key absolute top-12 left-14 p-1 rounded-lg text-(--clr-main-white) bg-(--clr-main-primary)"></i>
+          </div>
+          <div class="">
+            <p class="text-2xl font-bold text-(--clr-main-primary)">50k+ renters</p>
+            <p class="text-lg font-[500] text-(--clr-main-dark)">believe in our service</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col">
+          <div class="w-20 mb-5 relative border-2 border-(--clr-purple-shade) rounded-full">
+            <i
+              class="fa-solid fa-city text-4xl py-4 px-3 p-3 rounded-full border-4 border-(--clr-main-white) text-(--clr-main-white) bg-(--clr-purple-shade)"></i>
+            <i
+              class="fa-solid fa-magnifying-glass absolute top-12 left-14 p-1 rounded-lg text-(--clr-main-white) bg-(--clr-main-primary)"></i>
+          </div>
+          <div class="">
+            <p class="text-2xl font-bold text-(--clr-main-primary)">10k+ properties</p>
+            <p class="text-lg font-[500] text-(--clr-main-dark)">ready for occupancy</p>
+          </div>
         </div>
       </div>
     </section>
