@@ -92,7 +92,7 @@
             <input id="locationMobile" class="p-5 text-xl font-[500] outline-none" type="text"
               placeholder="Search location" autocomplete="off">
             <button type="submit"
-              class="absolute left-70 top-3 bg-(--clr-main-primary) text-(--clr-main-white) py-2.5 px-3.5 rounded-md"><i
+              class="absolute left-70 top-3 bg-(--clr-main-primary) text-(--clr-main-white) py-2.5 px-3.5 rounded-md cursor-pointer"><i
                 class="fa-solid fa-magnifying-glass"></i></button>
           </form>
         </div>
@@ -249,36 +249,172 @@
 
     <!-- property listings section -->
     <section class="pb-10">
-      <div class="text-center">
+      <div class="text-center py-20 pb-0 max-w-80 mx-auto">
         <h2 class="text-[2.5rem]/12 font-[700] mb-5">Based on your location</h2>
-        <p class="text-[1rem] text-(--clr-gray-600)">Some of our picked properties near your location.</p>
+        <p class="text-[1.1rem] text-(--clr-gray-600)">Some of our picked properties near your location.</p>
       </div>
 
       <!-- property listing form -->
-      <div class="flex flex-col">
-        <div class="bg-(--clr-purple-shade-2) border-2 border-(--clr-purple-shade) rounded-md">
-          <form id="propertyListingForm" action="#">
-            <button type="submit" class="text-(--clr-main-primary)"><i
+      <div class="flex flex-col py-10 pb-0 mb-10 mx-auto max-w-80">
+        <div class="mb-5 bg-(--clr-purple-shade-2) border-2 border-(--clr-purple-shade) rounded-md">
+          <form id="propertyListingForm" class="py-3 px-2 flex flex-row gap-3" action="#">
+            <button type="submit" class="text-xl text-(--clr-main-primary)"><i
                 class="fa-solid fa-magnifying-glass"></i></button>
-            <input type="search" id="ListingSearchInput" placeholder="Search...">
+            <input type="search" class="w-full max-w-80 outline-none text-(--clr-gray-600)" id="ListingSearchInput"
+              placeholder="Search...">
           </form>
         </div>
 
-        <div class="rbs-buttons flex">
-          <div class="">
+        <div
+          class="rbs-buttons py-2 flex flex-row justify-center gap-5 bg-(--clr-purple-shade-3) border-2 border-(--clr-purple-shade) rounded-md">
+          <div
+            class="px-4  py-2 flex flex-row items-center gap-2 text-(--clr-main-disabled) cursor-pointer hover:text-(--clr-main-primary) hover:bg-(--clr-main-white) hover:border-2 hover:rounded-md hover:border-(--clr-purple-shade)">
             <i class="fa-solid fa-key"></i>
             <p>Rent</p>
           </div>
-          <div class="">
+          <div
+            class="px-4  py-2 flex flex-row items-center gap-2 text-(--clr-main-disabled) cursor-pointer hover:text-(--clr-main-primary) hover:bg-(--clr-main-white) hover:border-2 hover:rounded-md hover:border-(--clr-purple-shade)">
             <i class="fa-solid fa-money-bill"></i>
             <p>Buy</p>
           </div>
-          <div class="">
+          <div
+            class="px-4  py-2 flex flex-row items-center gap-2 text-(--clr-main-disabled) cursor-pointer hover:text-(--clr-main-primary) hover:bg-(--clr-main-white) hover:border-2 hover:rounded-md hover:border-(--clr-purple-shade)">
             <i class="fa-solid fa-house"></i>
             <p>Sell</p>
           </div>
         </div>
-        <div class=""></div>
+      </div>
+
+      <!-- property listing feed -->
+      <div id="propertyListingFeed" class="flex flex-col items-center bg-linear-to-b from-[#FFFF] to-[#F0EFFB]">
+        <div class="property-card mb-6 flex flex-col">
+          <!-- card-top -->
+          <div class="relative">
+            <img src="/assets/images/Listing-img1.png" class="rounded-t-lg" alt="property image">
+            <div
+              class="absolute top-40 left-1 px-2 py-1 rounded-md flex items-center gap-2 text-(--clr-main-white) bg-(--clr-main-primary)">
+              <i class="fa-solid fa-fire"></i>
+              <p class="font-[600]">POPULAR</p>
+            </div>
+          </div>
+          <!-- card-bottom -->
+          <div class="card-bottom py-5 px-5 bg-(--clr-main-white) rounded-b-lg">
+            <div class="flex flex-row items-center gap-15">
+              <div class="property-pricing">
+                <p class="text-2xl font-[800] tracking-tight text-(--clr-main-primary)">$2,095<span
+                    class="text-lg font-[500] text-(--clr-gray-700)">/month</span></p>
+              </div>
+              <div id="addToFavsBtn"
+                class="px-3 py-2 flex items-center rounded-full border-2 border-(--clr-purple-shade)">
+                <i class="fa-regular fa-heart text-2xl text-(--clr-main-primary)"></i>
+              </div>
+            </div>
+            <div class="property-name mb-5 pb-3 border-b-1 border-b-(--clr-purple-shade)">
+              <h3 class="text-[1.5rem] font-[700] text-(--clr-main-dark) mb-1">Palm Harbor</h3>
+              <p class="font-[500] text-(--clr-gray-700)">Highland Lake, FL</p>
+            </div>
+            <div class="property-features flex gap-5">
+              <div class="rooms flex flex-row items-center gap-1">
+                <i class="fa-solid fa-bed text-(--clr-main-primary)"></i>
+                <p class="text-[#4d5369] font-[600]">3</p>
+              </div>
+              <div class="bathrooms flex flex-row items-center gap-1">
+                <i class="fa-solid fa-bath text-(--clr-main-primary)"></i>
+                <p class="text-[#4d5369] font-[600]">2</p>
+              </div>
+              <div class="measurement flex flex-row items-center gap-1">
+                <i class="fa-solid fa-ruler-combined text-(--clr-main-primary)"></i>
+                <p class="text-[#4d5369] font-[600]">5x7m</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="property-card mb-6 flex flex-col">
+          <!-- card-top -->
+          <div class="relative">
+            <img src="/assets/images/Listing-img2.png" class="rounded-t-lg" alt="property image">
+            <div
+              class="absolute top-40 left-1 px-2 py-1 rounded-md flex items-center gap-2 text-(--clr-main-white) bg-(--clr-main-primary)">
+              <i class="fa-solid fa-fire"></i>
+              <p class="font-[600]">POPULAR</p>
+            </div>
+          </div>
+          <!-- card-bottom -->
+          <div class="card-bottom py-5 px-5 bg-(--clr-main-white) rounded-b-lg">
+            <div class="flex flex-row items-center gap-15">
+              <div class="property-pricing">
+                <p class="text-2xl font-[800] tracking-tight text-(--clr-main-primary)">$2,700<span
+                    class="text-lg font-[500] text-(--clr-gray-700)">/month</span></p>
+              </div>
+              <div id="addToFavsBtn"
+                class="px-3 py-2 flex items-center rounded-full border-2 border-(--clr-purple-shade)">
+                <i class="fa-regular fa-heart text-2xl text-(--clr-main-primary)"></i>
+              </div>
+            </div>
+            <div class="property-name mb-5 pb-3 border-b-1 border-b-(--clr-purple-shade)">
+              <h3 class="text-[1.5rem] font-[700] text-(--clr-main-dark) mb-1">Beverly Springfield</h3>
+              <p class="font-[500] text-(--clr-gray-700)">Palm Harbor, TX</p>
+            </div>
+            <div class="property-features flex gap-5">
+              <div class="rooms flex flex-row items-center gap-1">
+                <i class="fa-solid fa-bed text-(--clr-main-primary)"></i>
+                <p class="text-[#4d5369] font-[600]">4</p>
+              </div>
+              <div class="bathrooms flex flex-row items-center gap-1">
+                <i class="fa-solid fa-bath text-(--clr-main-primary)"></i>
+                <p class="text-[#4d5369] font-[600]">2</p>
+              </div>
+              <div class="measurement flex flex-row items-center gap-1">
+                <i class="fa-solid fa-ruler-combined text-(--clr-main-primary)"></i>
+                <p class="text-[#4d5369] font-[600]">6x7.5m</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="property-card mb-6 flex flex-col">
+          <!-- card-top -->
+          <div class="relative">
+            <img src="/assets/images/Listing-img3.png" class="rounded-t-lg" alt="property image">
+            <div
+              class="absolute top-40 left-1 px-2 py-1 rounded-md flex items-center gap-2 text-(--clr-main-white) bg-(--clr-main-primary)">
+              <i class="fa-solid fa-fire"></i>
+              <p class="font-[600]">POPULAR</p>
+            </div>
+          </div>
+          <!-- card-bottom -->
+          <div class="card-bottom py-5 px-5 bg-(--clr-main-white) rounded-b-lg">
+            <div class="flex flex-row items-center gap-15">
+              <div class="property-pricing">
+                <p class="text-2xl font-[800] tracking-tight text-(--clr-main-primary)">$2,700<span
+                    class="text-lg font-[500] text-(--clr-gray-700)">/month</span></p>
+              </div>
+              <div id="addToFavsBtn"
+                class="px-3 py-2 flex items-center rounded-full border-2 border-(--clr-purple-shade)">
+                <i class="fa-regular fa-heart text-2xl text-(--clr-main-primary)"></i>
+              </div>
+            </div>
+            <div class="property-name mb-5 pb-3 border-b-1 border-b-(--clr-purple-shade)">
+              <h3 class="text-[1.5rem] font-[700] text-(--clr-main-dark) mb-1">Beverly Springfield</h3>
+              <p class="font-[500] text-(--clr-gray-700)">Palm Harbor, TX</p>
+            </div>
+            <div class="property-features flex gap-5">
+              <div class="rooms flex flex-row items-center gap-1">
+                <i class="fa-solid fa-bed text-(--clr-main-primary)"></i>
+                <p class="text-[#4d5369] font-[600]">4</p>
+              </div>
+              <div class="bathrooms flex flex-row items-center gap-1">
+                <i class="fa-solid fa-bath text-(--clr-main-primary)"></i>
+                <p class="text-[#4d5369] font-[600]">3</p>
+              </div>
+              <div class="measurement flex flex-row items-center gap-1">
+                <i class="fa-solid fa-ruler-combined text-(--clr-main-primary)"></i>
+                <p class="text-[#4d5369] font-[600]">8x10m</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
