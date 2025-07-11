@@ -5,6 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Estatery</title>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
   <!-- tailwind output css -->
   <link href="./output.css" rel="stylesheet">
   <!-- custom css -->
@@ -58,16 +63,16 @@
     <!-- hero section -->
     <section class="pt-10 pb-10 bg-(--clr-hero-background-mobile)">
       <div class="text-center mb-10">
-        <h2 class="text-[2.5rem]/12 font-[800] w-80 mx-auto text-(--clr-main-dark) mb-9">Buy, rent, or sell your
+        <h2 class="text-[2.5rem]/12 font-[700] w-80 mx-auto text-(--clr-main-dark) mb-9">Buy, rent, or sell your
           property easily
         </h2>
-        <p class="text-[1.5rem] font-[550] w-90 mx-auto text-(--clr-main-dark)">A great platform to buy, sell, or even
+        <p class="text-[1.5rem] font-[500] w-90 mx-auto text-(--clr-main-dark)">A great platform to buy, sell, or even
           rent your
           properties without any commisions.</p>
       </div>
 
       <!-- search location mobile -->
-      <div class="flex flex-col max-w-85 mx-auto mb-10 bg-(--clr-main-white) rounded-xl">
+      <div class="flex flex-col max-w-85 mx-auto mb-10 bg-(--clr-main-white) rounded-xl shadow-md">
         <!-- search location mobile top -->
         <div
           class="flex flex-row gap-4 justify-around py-4 rounded-t-lg border-b-2 border-(--clr-hero-background-mobile)">
@@ -156,9 +161,9 @@
     <section class="pt-10 pb-10">
       <!-- browse properties link -->
       <div
-        class="relative py-20 pb-63 max-w-80 mx-auto bg-(--clr-purple-shade-2) border-2 border-(--clr-purple-shade) rounded-[8px]">
+        class="relative py-20 pb-63 max-w-80 mx-auto mb-15 bg-(--clr-purple-shade-2) border-2 border-(--clr-purple-shade) rounded-[8px]">
         <div class="px-5 mb-10">
-          <h2 class=" text-[2.5rem]/12 font-[800] mx-auto text-(--clr-main-secondary) mb-5">The new way to find
+          <h2 class=" text-[2.5rem]/12 font-[700] mx-auto text-(--clr-main-secondary) mb-5">The new way to find
             your
             new
             home</h2>
@@ -168,21 +173,81 @@
             listed.
           </p>
           <a href="#"
-            class="text-[1.1rem] font-bold py-3 px-5 rounded-[8px] text-(--clr-main-white) bg-(--clr-main-secondary)">Browse
+            class="text-[1.1rem] font-[600] py-3 px-5 rounded-[8px] text-(--clr-main-white) bg-(--clr-main-secondary)">Browse
             Properties</a>
         </div>
         <img src="/assets/images/benefits-bg.svg" class="absolute z-0 rounded-[8px]" alt="benefits background">
       </div>
 
       <!-- benefit list -->
-      <div class="">
-        <div class=""></div>
-        <div class=""></div>
-        <div class=""></div>
-        <div class=""></div>
-        <div class=""></div>
+      <div class="max-w-80 mx-auto">
+        <div class="flex flex-row gap-4 mb-8">
+          <div class="benefit-card-top relative bottom-8 flex flex-row items-center gap-4">
+            <div class="w-16 mb-5 relative border-2 border-(--clr-purple-shade) rounded-full">
+              <i
+                class="fa-solid fa-house-circle-check text-2xl py-3 px-3 p-3 rounded-full border-3 border-(--clr-main-white) text-(--clr-main-white) bg-(--clr-purple-shade)"></i>
+              <i
+                class="fa-solid fa-key absolute top-9 left-10 p-1 rounded-lg text-(--clr-main-white) bg-(--clr-main-primary)"></i>
+            </div>
+          </div>
+          <div class="benefit-card-bottom">
+            <h3 class="text-2xl mb-4 font-bold text-(--clr-main-dark)">Property Insurance</h3>
+            <p class="text-(--clr-gray-600)">We offer our customer property protection of liability coverage and
+              insurance for their better life.</p>
+          </div>
+        </div>
+
+        <div class="flex flex-row gap-4 mb-8">
+          <div class="benefit-card-top relative bottom-8 flex flex-row items-center gap-4">
+            <div class="w-16 mb-5 relative border-2 border-(--clr-purple-shade) rounded-full">
+              <i
+                class="fa-solid fa-dollar-sign text-2xl py-3 px-5 p-3 rounded-full border-3 border-(--clr-main-white) text-(--clr-main-white) bg-(--clr-purple-shade)"></i>
+              <i
+                class="fa-solid fa-percent absolute top-9 left-10 p-1 rounded-lg text-(--clr-main-white) bg-(--clr-main-primary)"></i>
+            </div>
+          </div>
+          <div class="benefit-card-bottom">
+            <h3 class="text-2xl mb-4 font-bold text-(--clr-main-dark)">Best Price</h3>
+            <p class="text-(--clr-gray-600)">Not sure what you should be charging for your property? No need to worry,
+              let us do the numbers for you.</p>
+          </div>
+        </div>
+
+        <div class="flex flex-row gap-4 mb-8">
+          <div class="benefit-card-top relative bottom-8 flex flex-row items-center gap-4">
+            <div class="w-16 mb-5 relative border-2 border-(--clr-purple-shade) rounded-full">
+              <i
+                class="fa-solid fa-down-long text-2xl py-3 px-5 p-3 rounded-full border-3 border-(--clr-main-white) text-(--clr-main-white) bg-(--clr-purple-shade)"></i>
+              <i
+                class="fa-solid fa-dollar-sign absolute top-9 left-10 p-1 rounded-lg text-(--clr-main-white) bg-(--clr-main-primary)"></i>
+            </div>
+          </div>
+          <div class="benefit-card-bottom">
+            <h3 class="text-2xl mb-4 font-bold text-(--clr-main-dark)">Lowest Commission</h3>
+            <p class="text-(--clr-gray-600)">You no longer have to negotiate commissions and haggle with other agents it
+              only cost 2%!</p>
+          </div>
+        </div>
+
+        <div class="flex flex-row gap-4 mb-8">
+          <div class="benefit-card-top relative bottom-8 flex flex-row items-center gap-4">
+            <div class="w-15 mb-5 relative border-2 border-(--clr-purple-shade) rounded-full">
+              <i
+                class="fa-solid fa-location-dot text-2xl py-3 px-4 p-3 rounded-full border-3 border-(--clr-main-white) text-(--clr-main-white) bg-(--clr-purple-shade)"></i>
+              <i
+                class="fa-solid fa-door-open absolute top-9 left-10 p-1 rounded-lg text-(--clr-main-white) bg-(--clr-main-primary)"></i>
+            </div>
+          </div>
+          <div class="benefit-card-bottom">
+            <h3 class="text-2xl mb-4 font-bold text-(--clr-main-dark)">Overall Control</h3>
+            <p class="text-(--clr-gray-600)">Get a virtual tour, and schedule visits before you rent or buy any
+              properties. You get overall control.</p>
+          </div>
+        </div>
       </div>
     </section>
+
+
 
   </main>
 
