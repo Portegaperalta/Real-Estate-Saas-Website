@@ -62,97 +62,105 @@
   <main>
     <!-- hero section -->
     <section class="pt-10 pb-10 bg-(--clr-hero-background-mobile)">
-      <div class="text-center mb-10">
-        <h2 class="text-[2.5rem]/12 font-[700] w-80 mx-auto text-(--clr-main-dark) mb-9">Buy, rent, or sell
-          your
-          property easily
-        </h2>
-        <p class="text-[1.5rem] font-[500] w-90 mx-auto text-(--clr-main-dark)">A great platform to buy, sell, or even
-          rent your
-          properties without any commisions.</p>
-      </div>
-
-      <!-- search location mobile -->
-      <div class="flex flex-col max-w-85 mx-auto mb-10 bg-(--clr-main-white) rounded-xl shadow-md">
-        <!-- search location mobile top -->
-        <div
-          class="flex flex-row gap-4 justify-around py-4 rounded-t-lg border-b-2 border-(--clr-hero-background-mobile)">
-          <div class="cursor-pointer">
-            <p class="text-[1.2rem] font-[600] text-(--clr-main-dark) hover:text-(--clr-main-primary)">Rent</p>
+      <div class="flex flex-col mb-10 w-85 mx-auto sm:w-130 sm:mx-100">
+        <div class="hero-title mb-10 text-center sm:text-left">
+          <h2 class="text-[2.5rem]/12 font-[700] text-(--clr-main-dark) mb-9">Buy, rent, or sell
+            your
+            property easily
+          </h2>
+          <p class="text-[1.5rem] font-[500] text-(--clr-main-dark)">A great platform to buy, sell, or even
+            rent your
+            properties without any commisions.</p>
+        </div>
+        <!-- search location mobile -->
+        <div class="flex flex-col mb-10 bg-(--clr-main-white) rounded-xl shadow-md sm:hidden">
+          <!-- search location mobile top -->
+          <div
+            class="flex flex-row gap-4 justify-around py-4 rounded-t-lg border-b-2 border-(--clr-hero-background-mobile)">
+            <div class="cursor-pointer">
+              <p class="text-[1.2rem] font-[600] text-(--clr-main-dark) hover:text-(--clr-main-primary)">Rent</p>
+            </div>
+            <div class="cursor-pointer">
+              <p class="text-[1.2rem] font-[600] text-(--clr-main-dark) hover:text-(--clr-main-primary)">Buy</p>
+            </div>
+            <div class="cursor-pointer">
+              <p class="text-[1.2rem] font-[600] text-(--clr-main-dark) hover:text-(--clr-main-primary)">Sell</p>
+            </div>
           </div>
-          <div class="cursor-pointer">
-            <p class="text-[1.2rem] font-[600] text-(--clr-main-dark) hover:text-(--clr-main-primary)">Buy</p>
-          </div>
-          <div class="cursor-pointer">
-            <p class="text-[1.2rem] font-[600] text-(--clr-main-dark) hover:text-(--clr-main-primary)">Sell</p>
+          <!-- search location mobile bottom -->
+          <div class="flex flex-row align-middle justify-between rounded-b-2xl">
+            <form id="searchLocationFormMobile" class="relative">
+              <input id="locationMobile" class="p-5 text-xl font-[500] outline-none" type="text"
+                placeholder="Search location" autocomplete="off">
+              <button type="submit"
+                class="absolute left-70 top-3 bg-(--clr-main-primary) text-(--clr-main-white) py-2.5 px-3.5 rounded-md cursor-pointer"><i
+                  class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
           </div>
         </div>
-        <!-- search location mobile bottom -->
-        <div class="flex flex-row align-middle justify-between rounded-b-2xl">
-          <form id="searchLocationFormMobile" class="relative">
-            <input id="locationMobile" class="p-5 text-xl font-[500] outline-none" type="text"
-              placeholder="Search location" autocomplete="off">
-            <button type="submit"
-              class="absolute left-70 top-3 bg-(--clr-main-primary) text-(--clr-main-white) py-2.5 px-3.5 rounded-md cursor-pointer"><i
-                class="fa-solid fa-magnifying-glass"></i></button>
-          </form>
-        </div>
-      </div>
-
-      <!-- search location desktop -->
-      <div class="hidden">
-        <!-- search location desktop top -->
-        <div class="flex flex-row gap-4">
-          <div class="">
-            <p>Rent</p>
+        <!-- search location desktop -->
+        <div class="hidden mb-10 sm:flex sm:flex-col">
+          <!-- search location desktop top -->
+          <div class="flex flex-row gap-4 bg-(--clr-main-white) w-70 justify-between px-5 py-3 rounded-t-md">
+            <div class="cursor-pointer">
+              <p class="text-(-clr-main-secondary) text-md font-[500]">Rent</p>
+            </div>
+            <div class="cursor-pointer">
+              <p class="text-(-clr-main-secondary) text-md font-[500]">Buy</p>
+            </div>
+            <div class="cursor-pointer">
+              <p class="text-(-clr-main-secondary) text-md font-[500]">Sell</p>
+            </div>
           </div>
-          <div class="">
-            <p>Buy</p>
+          <!-- search location desktop bottom -->
+          <div class="bg-(--clr-main-white) w-160 px-5 py-3 rounded-b-md rounded-tr-md">
+            <form id="searchLocationFormDesktop" class="relative flex flex-row items-center">
+              <div class="flex flex-col">
+                <label for="location" class="text-(--clr-gray-600) text[600] mb-2">Location</label>
+                <input id="locationDesktop" type="text"
+                  class="text-(--clr-main-dark) font-[700] placeholder:text-(--clr-main-dark) placeholder:font-[700] outline-none cursor-pointer"
+                  placeholder="Barcelona, Spain">
+              </div>
+              <div class="flex flex-col">
+                <label for="moveInDate" class="text-(--clr-gray-600) text[600] mb-2">When</label>
+                <input type="date"
+                  class="text-(--clr-main-dark) font-[700] placeholder:text-(--clr-main-dark) placeholder:font-[700] outline-none cursor-pointer"
+                  placeholder="Select Move-in Date">
+              </div>
+              <div class="absolute left-104">
+                <button type="submit"
+                  class="text-(--clr-main-white) bg-(--clr-main-primary) top-7 py-4 px-5 font-[600] rounded-md cursor-pointer">Browse
+                  Properties</button>
+              </div>
+            </form>
           </div>
-          <div class="">Sell</div>
         </div>
-        <!-- search location desktop bottom -->
-        <div class="">
-          <form id="searchLocationFormDesktop">
-            <div class="flex flex-col">
-              <label for="location">Location</label>
-              <input id="locationDesktop" type="text" placeholder="Barcelona, Spain">
+        <!-- hero section stats -->
+        <div class="w-90 flex flex-row gap-10">
+          <div class="flex flex-col">
+            <div class="mb-5 w-20 relative border-2 border-(--clr-purple-shade) rounded-full">
+              <i
+                class="fa-solid fa-users text-4xl py-4 px-3 rounded-full border-4 border-(--clr-main-white) text-(--clr-main-white) bg-(--clr-purple-shade)"></i>
+              <i
+                class="fa-solid fa-key absolute top-12 left-14 p-1 rounded-lg text-(--clr-main-white) bg-(--clr-main-primary)"></i>
             </div>
             <div class="">
-              <label for="moveInDate">When</label>
-              <input type="date" placeholder="Select Move-in Date">
+              <p class="text-xl font-bold text-(--clr-main-primary)">50k+ renters</p>
+              <p class="text-md font-[500] text-(--clr-main-dark)">believe in our service</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col">
+            <div class="w-20 mb-5 relative border-2 border-(--clr-purple-shade) rounded-full">
+              <i
+                class="fa-solid fa-city text-4xl py-4 px-3 p-3 rounded-full border-4 border-(--clr-main-white) text-(--clr-main-white) bg-(--clr-purple-shade)"></i>
+              <i
+                class="fa-solid fa-magnifying-glass absolute top-12 left-14 p-1 rounded-lg text-(--clr-main-white) bg-(--clr-main-primary)"></i>
             </div>
             <div class="">
-              <button type="submit">Browse Properties</button>
+              <p class="text-xl font-bold text-(--clr-main-primary)">10k+ properties</p>
+              <p class="text-md font-[500] text-(--clr-main-dark)">ready for occupancy</p>
             </div>
-          </form>
-        </div>
-      </div>
-
-      <div class="px-3 flex flex-row gap-10 justify-center">
-        <div class="flex flex-col">
-          <div class="mb-5 w-20 relative border-2 border-(--clr-purple-shade) rounded-full">
-            <i
-              class="fa-solid fa-users text-4xl py-4 px-3 rounded-full border-4 border-(--clr-main-white) text-(--clr-main-white) bg-(--clr-purple-shade)"></i>
-            <i
-              class="fa-solid fa-key absolute top-12 left-14 p-1 rounded-lg text-(--clr-main-white) bg-(--clr-main-primary)"></i>
-          </div>
-          <div class="">
-            <p class="text-2xl font-bold text-(--clr-main-primary)">50k+ renters</p>
-            <p class="text-lg font-[500] text-(--clr-main-dark)">believe in our service</p>
-          </div>
-        </div>
-
-        <div class="flex flex-col">
-          <div class="w-20 mb-5 relative border-2 border-(--clr-purple-shade) rounded-full">
-            <i
-              class="fa-solid fa-city text-4xl py-4 px-3 p-3 rounded-full border-4 border-(--clr-main-white) text-(--clr-main-white) bg-(--clr-purple-shade)"></i>
-            <i
-              class="fa-solid fa-magnifying-glass absolute top-12 left-14 p-1 rounded-lg text-(--clr-main-white) bg-(--clr-main-primary)"></i>
-          </div>
-          <div class="">
-            <p class="text-2xl font-bold text-(--clr-main-primary)">10k+ properties</p>
-            <p class="text-lg font-[500] text-(--clr-main-dark)">ready for occupancy</p>
           </div>
         </div>
       </div>
@@ -313,11 +321,11 @@
                       class="text-lg font-[500] text-(--clr-gray-700)">/month</span></p>
                 </div>
                 <div id="addToFavsBtn"
-                  class="px-3 py-2 flex items-center rounded-full border-2 border-(--clr-purple-shade)">
+                  class="px-3 py-2 flex items-center rounded-full border-2 border-(--clr-purple-shade) cursor-pointer">
                   <i class="fa-regular fa-heart text-2xl text-(--clr-main-primary)"></i>
                 </div>
               </div>
-              <div class="property-name mb-5 pb-3 border-b-1 border-b-(--clr-purple-shade)">
+              <div class="property-name mb-5 pb-3 border-b-1 border-b-(--clr-purple-shade) cursor-pointer">
                 <h3 class="text-[1.5rem] font-[700] text-(--clr-main-dark) mb-1">Palm Harbor</h3>
                 <p class="font-[500] text-(--clr-gray-700)">Highland Lake, FL</p>
               </div>
@@ -355,7 +363,7 @@
                       class="text-lg font-[500] text-(--clr-gray-700)">/month</span></p>
                 </div>
                 <div id="addToFavsBtn"
-                  class="px-3 py-2 flex items-center rounded-full border-2 border-(--clr-purple-shade)">
+                  class="px-3 py-2 flex items-center rounded-full border-2 border-(--clr-purple-shade) cursor-pointer">
                   <i class="fa-regular fa-heart text-2xl text-(--clr-main-primary)"></i>
                 </div>
               </div>
@@ -397,7 +405,7 @@
                       class="text-lg font-[500] text-(--clr-gray-700)">/month</span></p>
                 </div>
                 <div id="addToFavsBtn"
-                  class="px-3 py-2 flex items-center rounded-full border-2 border-(--clr-purple-shade)">
+                  class="px-3 py-2 flex items-center rounded-full border-2 border-(--clr-purple-shade) cursor-pointer">
                   <i class="fa-regular fa-heart text-2xl text-(--clr-main-primary)"></i>
                 </div>
               </div>
@@ -533,7 +541,7 @@
         </form>
       </div>
 
-      <div class="max-w-90 mx-auto text-center sm:max-w-120">
+      <div class="max text-center mx-auto sm:max-w-120">
         <a href="#" class="text-[1rem] text-(--clr-gray-600)">Join <span
             class="text-(--clr-main-primary)">10,000+</span> other
           landlords in our estatery
