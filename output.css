@@ -308,12 +308,6 @@
   .max-w-90 {
     max-width: calc(var(--spacing) * 90);
   }
-  .max-w-100 {
-    max-width: calc(var(--spacing) * 100);
-  }
-  .max-w-200 {
-    max-width: calc(var(--spacing) * 200);
-  }
   .flex-1 {
     flex: 1;
   }
@@ -340,6 +334,9 @@
   }
   .items-center {
     align-items: center;
+  }
+  .items-start {
+    align-items: flex-start;
   }
   .justify-around {
     justify-content: space-around;
@@ -829,6 +826,11 @@
       margin-inline: calc(var(--spacing) * 0);
     }
   }
+  .sm\:mx-20 {
+    @media (width >= 40rem) {
+      margin-inline: calc(var(--spacing) * 20);
+    }
+  }
   .sm\:mb-0 {
     @media (width >= 40rem) {
       margin-bottom: calc(var(--spacing) * 0);
@@ -857,11 +859,6 @@
   .sm\:inline-block {
     @media (width >= 40rem) {
       display: inline-block;
-    }
-  }
-  .sm\:max-h-0 {
-    @media (width >= 40rem) {
-      max-height: calc(var(--spacing) * 0);
     }
   }
   .sm\:w-130 {
@@ -894,6 +891,16 @@
       max-width: calc(var(--spacing) * 200);
     }
   }
+  .sm\:max-w-245 {
+    @media (width >= 40rem) {
+      max-width: calc(var(--spacing) * 245);
+    }
+  }
+  .sm\:max-w-300 {
+    @media (width >= 40rem) {
+      max-width: calc(var(--spacing) * 300);
+    }
+  }
   .sm\:max-w-330 {
     @media (width >= 40rem) {
       max-width: calc(var(--spacing) * 330);
@@ -914,6 +921,11 @@
       flex-direction: row;
     }
   }
+  .sm\:flex-row-reverse {
+    @media (width >= 40rem) {
+      flex-direction: row-reverse;
+    }
+  }
   .sm\:items-center {
     @media (width >= 40rem) {
       align-items: center;
@@ -922,6 +934,11 @@
   .sm\:justify-around {
     @media (width >= 40rem) {
       justify-content: space-around;
+    }
+  }
+  .sm\:justify-between {
+    @media (width >= 40rem) {
+      justify-content: space-between;
     }
   }
   .sm\:justify-center {
@@ -939,6 +956,11 @@
       gap: calc(var(--spacing) * 0);
     }
   }
+  .sm\:gap-1 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 1);
+    }
+  }
   .sm\:gap-10 {
     @media (width >= 40rem) {
       gap: calc(var(--spacing) * 10);
@@ -947,6 +969,11 @@
   .sm\:gap-15 {
     @media (width >= 40rem) {
       gap: calc(var(--spacing) * 15);
+    }
+  }
+  .sm\:gap-20 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 20);
     }
   }
   .sm\:bg-\[url\(\/assets\/images\/hero-bg\.svg\)\] {
@@ -962,6 +989,11 @@
   .sm\:px-7 {
     @media (width >= 40rem) {
       padding-inline: calc(var(--spacing) * 7);
+    }
+  }
+  .sm\:py-0 {
+    @media (width >= 40rem) {
+      padding-block: calc(var(--spacing) * 0);
     }
   }
   .sm\:py-2 {
@@ -1014,7 +1046,7 @@
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
-@media all and (min-width: 768px) and (max-width: 1718px) {
+@media all and (min-width: 640px) and (max-width: 1718px) {
   .hero-right {
     display: none;
   }

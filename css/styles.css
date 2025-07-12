@@ -21,7 +21,7 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-@media all and (min-width: 768px) and (max-width: 1718px) {
+@media all and (min-width: 640px) and (max-width: 1718px) {
   .hero-right {
     display: none;
   }
