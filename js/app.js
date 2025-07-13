@@ -1,3 +1,14 @@
+const browseTypeBtns = document.querySelectorAll('.browse-type-btn')
+
+browseTypeBtns.forEach((browseTypeBtn) => {
+  browseTypeBtn.addEventListener('click', () => {
+    browseTypeBtns.forEach((b) => b.classList.remove('text-(--clr-main-primary)'))
+
+    browseTypeBtn.classList.add('text-(--clr-main-primary)')
+  })
+})
+
+//add to favorite propertiy buttons event listeners 
 const addToFavButtons = document.querySelectorAll('.addToFavsBtn')
 
 addToFavButtons.forEach((addToFavButton) => {
