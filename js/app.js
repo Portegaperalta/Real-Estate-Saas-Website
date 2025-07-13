@@ -54,3 +54,18 @@ valueDisplays.forEach((valueDisplay) => {
   }, duration);
 })
 
+// Mobile menu functionality
+const mobileMenuBtn = document.getElementById('mobileMenuBtn')
+const mobileMenu = document.getElementById('mobileMenu')
+
+mobileMenuBtn.addEventListener('click', () => {
+  mobileMenu.classList.toggle('hidden')
+})
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', (e) => {
+  if (!mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+    mobileMenu.classList.add('hidden')
+  }
+})
+
