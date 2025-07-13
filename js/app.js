@@ -8,6 +8,26 @@ browseTypeBtns.forEach((browseTypeBtn) => {
   })
 })
 
+const feedTypeBtns = document.querySelectorAll('.feed-type-btn')
+
+feedTypeBtns.forEach((feedTypeBtn) => {
+  feedTypeBtn.addEventListener('click', () => {
+    feedTypeBtns.forEach((btn) => {
+      btn.classList.remove('text-(--clr-main-primary)')
+      btn.classList.remove('bg-(--clr-main-white)')
+      btn.classList.remove('border-2')
+      btn.classList.remove('rounded-md')
+      btn.classList.remove('border-(--clr-purple-shade)')
+    })
+
+    feedTypeBtn.classList.add('text-(--clr-main-primary)')
+    feedTypeBtn.classList.add('bg-(--clr-main-white)')
+    feedTypeBtn.classList.add('border-2')
+    feedTypeBtn.classList.add('rounded-md')
+    feedTypeBtn.classList.add('border-(--clr-purple-shade)')
+  })
+})
+
 //add to favorite propertiy buttons event listeners 
 const addToFavButtons = document.querySelectorAll('.addToFavsBtn')
 
