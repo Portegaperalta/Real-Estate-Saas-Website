@@ -23,6 +23,23 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
+.autoShow {
+  animation: text-appear both;
+  animation-timeline: view();
+}
+
+@keyframes text-appear {
+  from {
+    opacity: 0.70;
+    transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media all and (min-width: 640px) and (max-width: 1718px) {
   .hero-right {
     display: none;
